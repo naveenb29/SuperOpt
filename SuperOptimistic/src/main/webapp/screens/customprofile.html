@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+function showNameOptions(choice) {
+//alert("inside showNameOptions");
+if((choice == "1") )
+{
+//alert("inside if");
+document.getElementById('fullname').style.display="BLOCK";
+document.getElementById('nickname').style.display="BLOCK";
+document.getElementById('spacer1').style.display="BLOCK";
+document.getElementById('spacer2').style.display="BLOCK";
+}
+else
+{
+//alert("inside else");
+document.getElementById('fullname').style.display="none";
+document.getElementById('nickname').style.display="none";
+document.getElementById('spacer1').style.display="none";
+document.getElementById('spacer2').style.display="none";
+}
+}
+</script>
+</head>
+
+<body>
+<form id="form1" name="profileForm" method="post" action="" style="width: 60%">
+  <div class="Title">User Profile Configuration</div>
+  <div>&nbsp;</div>
+  <div class="BoldText">Select the options that you want the user to enter. </div>
+  <div>&nbsp;</div>
+  <div class="NormalText">
+  	<table width="" border="0">
+	  <tr>
+		<td>Should the user enter his Name?</td>
+		<td> <label>
+			<input type="radio" name="userName" value="yes" onclick="showNameOptions('1');" />
+			Yes</label>     
+		  <label>
+			<input type="radio" name="userName" value="no" onclick="showNameOptions('2');" />
+			No</label></td>
+	  </tr>
+	</table>
+  </div>   
+  <div id="spacer1" style="display:none">&nbsp;</div>
+  <div id="fullname" class="NormalText" style="display:none">
+  	<table width="" border="0">
+	  <tr>
+		<td>Should the user enter his Full Name?</td>
+		<td> <label>
+			<input type="radio" name="userFullName" value="yes" />
+			Yes</label>     
+		  <label>
+			<input type="radio" name="userFullName" value="no" />
+			No</label></td>
+	  </tr>
+	</table>
+  </div>
+  <div id="spacer2" style="display:none">&nbsp;</div>
+  <div id="nickname" class="NormalText" style="display:none">  
+  	<table width="" border="0">
+	  <tr>
+		<td>Should the user enter his nick name?</td>
+		<td> <label>
+			<input type="radio" name="userNickName" value="yes" />
+			Yes</label>     
+		  <label>
+			<input type="radio" name="userNickName" value="no" />
+			No</label></td>
+	  </tr>
+	</table>
+  </div>
+  <div>&nbsp;</div>
+  <div class="NormalText">  
+  	<table width="" border="0">
+	  <tr>
+		<td>Should the user select a profile picture?</td>
+		<td> <label>
+			<input type="radio" name="profilePicture" value="yes" />
+			Yes</label>     
+		  <label>
+			<input type="radio" name="profilePicture" value="no" />
+			No</label></td>
+	  </tr>
+	</table>
+  </div>
+  <div>&nbsp;</div>
+  <div class="NormalText">  
+  	<table width="" border="0">
+	  <tr>
+		<td>Should the user enter his age group?</td>
+		<td> <label>
+			<input type="radio" name="ageGroup" value="yes" />
+			Yes</label>     
+		  <label>
+			<input type="radio" name="ageGroup" value="no" />
+			No</label></td>
+	  </tr>
+	</table>
+  </div>
+  <div>&nbsp;</div>
+  <div class="NormalText">  
+  	<table width="" border="0">
+	  <tr>
+		<td>Should the user enter his country?</td>
+		<td> <label>
+			<input type="radio" name="country" value="yes" />
+			Yes</label>     
+		  <label>
+			<input type="radio" name="country" value="no" />
+			No</label></td>
+	  </tr>
+	</table>
+  </div>
+  <div>&nbsp;</div>
+  <div class="NormalText">  
+  	<table width="" border="0">
+	  <tr>
+		<td>Should the user enter his language preference?</td>
+		<td> <label>
+			<input type="radio" name="languagePref" value="yes" />
+			Yes</label>     
+		  <label>
+			<input type="radio" name="languagePref" value="no" />
+			No</label></td>
+	  </tr>
+	</table>
+  </div>
+  <div>&nbsp;</div>
+  <div>
+    <input type="submit" name="Next" value="Next" class="button" />
+  </div>
+</form>
+</body>
+</html>

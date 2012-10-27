@@ -1,0 +1,55 @@
+/* CSS Document */
+
+.Title {
+
+	font-size: 14px;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #980000;
+}
+
+.NormalText {
+	font-size: 11px;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	color: #252525;	
+}
+
+.BoldText {
+	font-size: 11px;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color: #252525;
+}
+
+.button {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bolder;
+	color: #333333;
+	height: 20px;
+	border: 1px solid #999999;	
+}
+
+#screenmap
+{
+FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+border-collapse:collapse;
+}
+#screenmap td
+{
+font-size:11px;
+border:1px solid #999999;
+margin: 1px;
+}
+
+#screenmap tr td 
+{
+color:#000000;
+background-color:#ffffff;
+}
+
+body
+   {  	
+    margin-left: 600px;
+    margin-top: 250px;  	
+   }
